@@ -35,7 +35,7 @@ The following Python libraries are required:
 ### Installation & Setup
 
 1.  **Clone or Save:**
-    Save the Python source code as `chatbot.py`.
+    Save the Python source code as `literacybot.py`.
 
 2.  **Install Library:**
     Open your terminal or command prompt and install the `textblob` library:
@@ -56,5 +56,5 @@ The following Python libraries are required:
 Navigate to the directory containing `chatbot.py` and execute the following command:
 
 ```bash
-python chatbot.py
+python literacy-bot.py
 The application window will launch, starting with the language selection screen.⚙️ Code Structure and ExtensibilityThe application is structured for clarity and easy maintenance within a single ChatbotGUI class.ComponentRoleNotes on ExtensibilityLANG_DATA DictionaryCentral Text RepositoryContains all text strings across all supported languages. Highly extensible: Add new languages or update content by modifying only this dictionary.self.commands DictionaryCommand DispatcherMaps user-recognized keywords ('info', 'quiz') to their specific handler methods (_show_info, start_quiz). Scalable: Easily add new features by defining a new method and registering its keyword here._process_commandCentral Logic HubManages user input flow, state changes (e.g., during the quiz), and special case handling.UI Setup MethodsGUI ConfigurationDedicated methods (e.g., _setup_main_ui) for configuring the visual elements of the Tkinter interface.Feature Logic MethodsCore FunctionalityMethods like _show_otp or _handle_quiz_response contain the specific logic for each feature.🧑‍💻 About the CreatorsThis project was conceived and developed as an initiative to promote digital inclusion.RoleNameDetailsCreatorAnup YadavStudent of BBD University, Resident of Siwan, BiharProgrammerAnkit Singh(A special shout-out to Anup Yadav for the original concept!)
